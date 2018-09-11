@@ -4,10 +4,14 @@
 
 ## Today's Schedule
 - Announcements
-- Code review *[30 minutes]*
-- [Topics from HTML readings](#html) *[15 minutes]*
-- [Topics from CSS readings](#css) *[30 minutes]*
-- [Topics from JS readings](#js) *[45 minutes]*
+- Code review *[30 minutes]* (Amanda)
+- Website Scaffold (John)
+- Intro to CSS (John)
+- **Break**
+- JS Variables and Data Types (John)
+- **Break**
+- Conditions, Decisions, and Logic (Amanda)
+- **Break**
 - [Review lab assignment, code demo, `git clone`](#code) *[45 minutes]*
 
 ### Announcements:
@@ -107,10 +111,13 @@ As a result of completing Lecture 2 of Code 201, students will:
 - p.69 	Rules for naming variables
 - pp.70-73 	Arrays
 - p.74 	Expressions
-- p.75 	Operators (Arithmetic, p.76) (String, p.78)
 
 **JS Chapter 4: "Decisions & Loops"**
 
+- p.75 	Operators (Arithmetic, p.76) (String, p.78)
+  - counter++
+  - ++counter
+  - counter=counter+1
 - p.148 	Decision making
 - p.149 	Evaluating conditionals & conditional statements
 - p.150 	Comparison operators: evaluating conditions
