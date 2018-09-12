@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  <title>Box Model Demo</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+
+  <section>
+
+    <div>
+      <p>Standard Div</p>
+    </div>
+
+    <div class="border-box">
+      <p>Border Box Div</p>
+    </div>
+
+  </section>
+
+  <ul>
+    <li>Above, the section tag has a border, padding and a background color</li>
+    <li>The divs have margin (space between) which is going to be the same color as the container (the blue of the section)</li>
+    <li>The divs have a background of white</li>
+    <li>The p tags (where our content lives) have a background of grey and some padding for readability</li>
+    <li>Becuase the divs have some padding, and the 'p' tags are a diffent color, you can "see" the padding as that white placemat. </li>
+  </ul>
+
+
+    <section>
+
+      <div class='inline-block'>
+        <p>Inline-Block Div</p>
+      </div>
+
+      <span>Span (inline element)</span>
+
+      <div class="inline">
+        <p>Inline Div</p>
+      </div>
+
+    </section>
+
+    <ul>
+      <li>Notice how the span and the 'inline' div ignore the height and width in the CSS?</li>
+      <li>In fact, that inline div still gets greedy, even though it's displayed horizontally</li>
+    </ul>
+
+</body>
+</html>

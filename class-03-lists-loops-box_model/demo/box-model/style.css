@@ -1,0 +1,53 @@
+body {
+    background: #ccc;
+    margin: 20px;
+}
+
+ul {
+    margin: 20px;
+    list-style-type: square;
+}
+
+li {
+    line-height: 20px;
+}
+
+section {
+    background: aliceblue;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+/* Styling here applies to all divs */
+div, span {
+    background: #fff;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+/* Styling here applies to all "p" tags that are inside of a "div" */
+div p {
+    background: #eee;
+    padding: 10px;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+span {
+    height: 100px;
+    width: 150px;
+}
+
+.inline {
+    display: inline;
+    height: 100px;
+    width: 150px;
+}
+
+.inline-block {
+    display: inline-block;
+}
