@@ -1,0 +1,40 @@
+header {
+    background: #111;
+    color: #fff;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+section {
+    background: #ccc;
+    border: 1px solid black;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    top: 75px;
+    width: 400px;
+    z-index: 2;
+}
+
+.outer {
+    background: pink;
+    border: 1px solid #fff;
+    height: 175px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 200px;
+    z-index: 10;
+}
+
+.inner {
+    background: #fff;
+    border: 1px solid black;
+    height: 125px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
