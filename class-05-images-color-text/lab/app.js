@@ -29,7 +29,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+var multiply=num1 * num2;
+var summary='the product of ' + num1 + '*' + num2  + is + multiply + '.';
+return [summary,multiply]
 }
 
 // Here is the test for multiply(); uncomment it to run it
