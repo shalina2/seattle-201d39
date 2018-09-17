@@ -76,9 +76,14 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) {
+    var sum = arr.reduce(function(acc,cur) {
+        return acc + cur;},0);
+        var result= [ sum,arr.join()+ 'their sum is ' + sum]
+        return result;//eslint-disable-line
 
 }
+    console.log(sumarray([2,3,4]));
 
 // Here is the test for sumArray(); uncomment it to run it
 
