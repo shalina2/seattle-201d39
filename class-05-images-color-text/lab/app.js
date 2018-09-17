@@ -102,9 +102,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multArr) {
+    var product = arr.reduce(function(acc,cur) {
+        return acc + cur;},0);
+        var result= [ produuct,arr.join()+ 'their product is ' + produuct]
+        return result;//eslint-disable-line
 
-}
+     //eslint-disable-line
+
+}   console.log(multiplyarray([2,3,4]));
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
