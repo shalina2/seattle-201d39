@@ -9,11 +9,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+    var numsum = num1 + num2;
+    var summary = [numsum, 'The sum of ' + a + 'and ' + b + 'is ' + numsum + '.'];
+    return[sum,summary];
 }
-
+testSum(4,7);
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -27,7 +29,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+var multiply=num1 * num2;
+var summary=['the product of ' + num1 + '*' + num2  + is + multiply + '.'];
+return [summary,multiply]
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -48,6 +52,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+var sumAandB = sum(a,b);
+sumAandB = sumAandB[0];
+var sumTwo = sum(sumAandB,C);
+sumTwo =sumtwo[0];
+var productone =multiply(a,b);
+productone =product[0];
+var producttwo = multiply(productone,c);
+productTwo = productTwo[0];
+var sumproductArray =[sumtwo,
+producttwo,
+a + ' and ' + b + 'and ' + b + ' and ' + c + ' is ' + producttwo 
++ '.'];
+return sumproductArray;
 
 }
 
@@ -69,9 +86,14 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) {
+    var sum = arr.reduce(function(acc,cur) {
+        return acc + cur;},0);
+        var result= [ sum,arr.join()+ 'their sum is ' + sum]
+        return result;//eslint-disable-line
 
 }
+    console.log(sumarray([2,3,4]));
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -90,9 +112,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multArr) {
+    var product = arr.reduce(function(acc,cur) {
+        return acc + cur;},0);
+        var result= [ produuct,arr.join()+ 'their product is ' + produuct]
+        return result;//eslint-disable-line
 
-}
+     //eslint-disable-line
+
+}   console.log(multiplyarray([2,3,4]));
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
@@ -105,7 +133,8 @@ function multiplyArray(multArr) { //eslint-disable-line
 
 /////////////////////////////////////
 /* STRETCH GOAL: Problem 6
-Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
+Write a function called multiplyAnyArray() that takes an array of numbers 
+of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
 
 "The numbers 1,2,3,4,5 have a product of 120."
 
@@ -118,7 +147,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+function multiplyAnyArray(dynamicArray) { 
+    var totalproduct = 1;
+    for ( var i =0; i < dynamicArray.length;i++) {
+        totalproduct =multiply(totalproduct ' + //eslint-disable-line
 
 }
 
