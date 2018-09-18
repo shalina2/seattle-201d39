@@ -9,8 +9,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-    var sum = num1 + num2;
-    var summary = num1 + '+' + num2 + '=' + sum;
+    var numsum = num1 + num2;
+    var summary = [numsum, 'The sum of ' + a + 'and ' + b + 'is ' + numsum + '.'];
     return[sum,summary];
 }
 testSum(4,7);
@@ -30,7 +30,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
 var multiply=num1 * num2;
-var summary='the product of ' + num1 + '*' + num2  + is + multiply + '.';
+var summary=['the product of ' + num1 + '*' + num2  + is + multiply + '.'];
 return [summary,multiply]
 }
 
@@ -52,10 +52,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-var summary =' num1  ' + and  + num2 + and + num3 + to  + sum  + '.';
-var product='The product of ' + num1 + and + num2 + and + num3 + is + 'multiply()';
-return [summary];
-return[product];
+var sumAandB = sum(a,b);
+sumAandB = sumAandB[0];
+var sumTwo = sum(sumAandB,C);
+sumTwo =sumtwo[0];
+var productone =multiply(a,b);
+productone =product[0];
+var producttwo = multiply(productone,c);
+productTwo = productTwo[0];
+var sumproductArray =[sumtwo,
+producttwo,
+a + ' and ' + b + 'and ' + b + ' and ' + c + ' is ' + producttwo 
++ '.'];
+return sumproductArray;
+
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -123,7 +133,8 @@ function multiplyArray(multArr) {
 
 /////////////////////////////////////
 /* STRETCH GOAL: Problem 6
-Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
+Write a function called multiplyAnyArray() that takes an array of numbers 
+of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
 
 "The numbers 1,2,3,4,5 have a product of 120."
 
@@ -136,7 +147,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+function multiplyAnyArray(dynamicArray) { 
+    var totalproduct = 1;
+    for ( var i =0; i < dynamicArray.length;i++) {
+        totalproduct =multiply(totalproduct ' + //eslint-disable-line
 
 }
 
